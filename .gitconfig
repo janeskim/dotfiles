@@ -1,0 +1,11 @@
+[user]
+    name = janeskim
+    email = jane@officeluv.com
+[push]
+    default = matching
+[alias]
+    browse = !open $(git remote get-url origin | sed s!git@!https://! | sed s!com:!com/! | sed s!\\\\.git!!)
+    bissues = !open $(git remote get-url origin | sed s!git@!https://! | sed s!com:!com/! | sed s!\\\\.git!!)/issues
+    bpulls = !open $(git remote get-url origin | sed s!git@!https://! | sed s!com:!com/! | sed s!\\\\.git!!)/pulls
+    bmerges = !open $(git remote get-url origin | sed s!git@!https://! | sed s!com:!com/! | sed s!\\\\.git!!)/merge_requests
+    blines = !open $(git remote get-url origin | sed s!git@!https://! | sed s!com:!com/! | sed s!\\\\.git!!)/pipelines
